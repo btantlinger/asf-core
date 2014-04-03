@@ -15,6 +15,6 @@
         "matthiasmullie/minify": "1.1.2"
     },
     "autoload": {
-        "files": ["asf/bootstrap.php"]
+        "files": ["bootstrap.php"]
     }
 }
