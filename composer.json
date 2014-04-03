@@ -1,0 +1,20 @@
+{
+    "name": "ret/asf",
+    "description": "ASF is A Small Framework for building web applications in PHP 5.3+",
+    "license": "LGPL-2.1+",
+    "authors": [
+        {
+            "name": "Bob Tantlinger",
+            "email": "bob.tantlinger@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "swiftmailer/swiftmailer": "v4.3.0",
+        "apache/log4php": "2.3.0",
+        "matthiasmullie/minify": "1.1.2"
+    },
+    "autoload": {
+        "files": ["asf/bootstrap.php"]
+    }
+}

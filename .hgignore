@@ -1,0 +1,13 @@
+\.orig$
+\.orig\..*$
+\.chg\..*$
+\.rej$
+\.conflict\~$
+library/composer.phar
+library/composer.lock
+^library/vendor/
+^temp/
+^app/logs/
+^nbproject/
+^vendor/
+
