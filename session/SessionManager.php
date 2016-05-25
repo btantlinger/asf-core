@@ -120,7 +120,7 @@ class SessionManager
 	{
 		// If this session is obsolete it means there already is a new id
 		// If this session is obsolete it means there already is a new id
-		if(isset($_SESSION['OBSOLETE']) || $_SESSION['OBSOLETE'] == true)
+		if(isset($_SESSION['OBSOLETE']) || ((!empty($_SESSION['OBSOLETE'])) && $_SESSION['OBSOLETE'] == true))
 			return;
 
 
