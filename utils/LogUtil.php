@@ -25,6 +25,18 @@ class LogUtil {
         $logConf = APP_PATH . "logger." . \asf\core\Config::getInstance()->getEnvConfigFilePrefix() . ".xml";
         if (is_readable($logConf) && is_file($logConf)) {
             \Logger::configure($logConf);
-        }
+        } else {
+	     $nullLogger = array(
+                'appenders' => array(
+                    'default' => array(
+                        'class' => 'LoggerAppenderNull',
+                    ),
+                ),
+                'rootLogger' => array(
+                    'appenders' => array('default'),
+                ),
+            );
+   	    \Logger::configure($nullLogger);
+	}
     }
 }
