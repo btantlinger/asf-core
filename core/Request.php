@@ -132,7 +132,13 @@ class Request {
     }
 
     private function ctrlName($name) {
-        return ucfirst($name) . "Controller";
+        $parts = explode('_', $name);
+        $n = '';
+        foreach($parts as $p) {
+            $n .= ucfirst($p);
+        }
+        $name = $n;
+        return $name . "Controller";
     }
 
     private function ctrlFileName($name) {
